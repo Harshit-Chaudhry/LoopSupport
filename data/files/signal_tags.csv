@@ -1,0 +1,61 @@
+signal_id,interaction_id,signal_category,signal_severity,fixable,fix_type,signal_summary,extracted_by,extracted_at,human_quality_rating,silent_failure,audited_by,audited_at,used_in_index_rebuild,used_in_prompt_update,prompt_version_after
+1,52,missing_context,high,1,index_update,Missing context about customer's previous escalation history.,human_auditor,2026-06-18T12:29:39,0,1,AGT-09,2026-06-19T12:29:39,0,0,
+2,62,wrong_tone,low,0,none,Model cited an outdated return policy version.,signal_extractor_v1,2026-06-16T12:29:39,,0,,,0,1,
+3,22,hallucination,low,1,prompt_update,Suggested wrong escalation path for billing disputes.,signal_extractor_v1,2026-06-08T12:29:39,,0,,,0,0,prompt-v1.7
+4,45,wrong_tone,medium,1,none,Retrieval score was below threshold; fallback to generic response.,signal_extractor_v1,2026-06-05T12:29:39,,0,,,1,0,
+5,20,other,critical,1,index_update,Model cited an outdated return policy version.,human_auditor,2026-05-30T12:29:39,,0,,,1,1,
+6,65,wrong_tone,medium,1,both,Tone was too formal for a chat channel interaction.,human_auditor,2026-05-27T12:29:39,,0,,,0,1,prompt-v3.7
+7,41,hallucination,high,1,none,"Retrieved ticket was from a different product category, reducing relevance.",human_auditor,2026-06-23T12:29:39,1,1,AGT-08,2026-06-21T12:29:39,0,0,
+8,67,retrieval_miss,high,1,prompt_update,Missing context about customer's previous escalation history.,signal_extractor_v1,2026-05-30T12:29:39,,0,,,0,0,prompt-v2.5
+9,48,hallucination,high,1,both,Tone was too formal for a chat channel interaction.,signal_extractor_v1,2026-06-05T12:29:39,2,0,AGT-06,2026-06-21T12:29:39,0,1,prompt-v3.7
+10,49,correct_but_edited,medium,1,index_update,Response used deprecated pricing tier names.,human_auditor,2026-06-03T12:29:39,,0,,,1,1,
+11,63,wrong_tone,high,1,none,Response was correct but agent added empathy phrasing.,signal_extractor_v1,2026-06-14T12:29:39,1,1,AGT-12,2026-06-18T12:29:39,1,1,
+12,78,wrong_policy,critical,1,none,Model reached token limit and truncated the policy explanation.,signal_extractor_v1,2026-06-10T12:29:39,,0,,,1,0,
+13,68,missing_context,high,1,prompt_update,Tone was too formal for a chat channel interaction.,human_auditor,2026-05-28T12:29:39,,0,,,1,0,prompt-v3.3
+14,79,missing_context,critical,1,both,Missing context about customer's previous escalation history.,human_auditor,2026-05-27T12:29:39,1,0,AGT-02,2026-06-20T12:29:39,0,1,prompt-v3.8
+15,23,other,critical,1,prompt_update,Missing context about customer's previous escalation history.,human_auditor,2026-06-04T12:29:39,,0,,,1,0,prompt-v3.6
+16,73,other,high,1,both,Tone was too formal for a chat channel interaction.,signal_extractor_v1,2026-06-08T12:29:39,0,0,AGT-06,2026-06-11T12:29:39,1,0,prompt-v3.5
+17,71,hallucination,high,1,index_update,Suggested wrong escalation path for billing disputes.,signal_extractor_v1,2026-06-13T12:29:39,,0,,,1,1,
+18,1,correct_but_edited,medium,1,prompt_update,Suggested wrong escalation path for billing disputes.,signal_extractor_v1,2026-06-18T12:29:39,,0,,,1,1,prompt-v3.5
+19,43,wrong_tone,high,1,both,Retrieval score was below threshold; fallback to generic response.,signal_extractor_v1,2026-06-19T12:29:39,0,1,AGT-07,2026-06-17T12:29:39,1,0,prompt-v1.4
+20,61,wrong_policy,low,1,prompt_update,Response used deprecated pricing tier names.,human_auditor,2026-05-29T12:29:39,,0,,,1,1,prompt-v3.6
+21,5,hallucination,low,0,none,Response used deprecated pricing tier names.,signal_extractor_v1,2026-06-06T12:29:39,,0,,,0,0,
+22,69,hallucination,critical,1,index_update,Model reached token limit and truncated the policy explanation.,human_auditor,2026-06-09T12:29:39,,0,,,1,0,
+23,15,correct_but_edited,low,0,none,Suggested wrong escalation path for billing disputes.,human_auditor,2026-05-26T12:29:39,,0,,,0,1,
+24,76,correct_but_edited,low,1,prompt_update,Model reached token limit and truncated the policy explanation.,signal_extractor_v1,2026-06-15T12:29:39,,0,,,0,1,prompt-v1.3
+25,14,retrieval_miss,medium,1,both,Missing context about customer's previous escalation history.,signal_extractor_v1,2026-06-17T12:29:39,,0,,,1,0,prompt-v3.9
+26,58,correct_but_edited,low,0,none,Response hallucinated a 48-hour resolution SLA that does not exist.,human_auditor,2026-05-27T12:29:39,1,0,AGT-11,2026-06-20T12:29:39,0,1,
+27,10,missing_context,high,1,index_update,Response was correct but agent added empathy phrasing.,signal_extractor_v1,2026-06-19T12:29:39,1,0,AGT-07,2026-06-23T12:29:39,1,0,
+28,18,model_limit,critical,1,none,Missing context about customer's previous escalation history.,signal_extractor_v1,2026-05-30T12:29:39,1,0,AGT-02,2026-06-21T12:29:39,0,0,
+29,39,model_limit,low,1,both,Missing context about customer's previous escalation history.,signal_extractor_v1,2026-06-21T12:29:39,,0,,,1,1,prompt-v3.5
+30,50,model_limit,low,1,prompt_update,Model reached token limit and truncated the policy explanation.,signal_extractor_v1,2026-06-12T12:29:39,1,1,AGT-02,2026-06-17T12:29:39,1,0,prompt-v1.6
+31,47,wrong_policy,low,1,none,Tone was too formal for a chat channel interaction.,human_auditor,2026-06-22T12:29:39,,0,,,0,0,
+32,8,retrieval_miss,low,0,none,"Retrieved ticket was from a different product category, reducing relevance.",human_auditor,2026-05-30T12:29:39,0,0,AGT-10,2026-06-11T12:29:39,0,1,
+33,42,model_limit,critical,1,index_update,"Retrieved ticket was from a different product category, reducing relevance.",signal_extractor_v1,2026-05-25T12:29:39,2,0,AGT-12,2026-06-11T12:29:39,0,1,
+34,13,wrong_policy,low,0,none,Suggested wrong escalation path for billing disputes.,signal_extractor_v1,2026-06-14T12:29:39,,0,,,1,1,
+35,66,correct_but_edited,high,1,both,Model cited an outdated return policy version.,human_auditor,2026-06-22T12:29:39,,0,,,0,1,prompt-v1.0
+36,32,retrieval_miss,critical,1,index_update,Response hallucinated a 48-hour resolution SLA that does not exist.,signal_extractor_v1,2026-06-12T12:29:39,0,0,AGT-07,2026-06-22T12:29:39,0,1,
+37,30,retrieval_miss,critical,1,none,Retrieval score was below threshold; fallback to generic response.,signal_extractor_v1,2026-06-14T12:29:39,,0,,,1,1,
+38,37,correct_but_edited,high,1,index_update,Response used deprecated pricing tier names.,human_auditor,2026-06-04T12:29:39,,0,,,0,1,
+39,74,missing_context,medium,1,index_update,Response used deprecated pricing tier names.,signal_extractor_v1,2026-05-29T12:29:39,,0,,,0,0,
+40,70,missing_context,low,1,both,Missing context about customer's previous escalation history.,human_auditor,2026-06-18T12:29:39,,0,,,1,1,prompt-v3.1
+41,34,model_limit,critical,1,both,Response was correct but agent added empathy phrasing.,signal_extractor_v1,2026-06-05T12:29:39,,0,,,0,1,prompt-v1.5
+42,55,wrong_policy,medium,1,index_update,"Retrieved ticket was from a different product category, reducing relevance.",signal_extractor_v1,2026-05-28T12:29:39,,0,,,0,0,
+43,51,correct_but_edited,low,1,none,Missing context about customer's previous escalation history.,human_auditor,2026-06-09T12:29:39,0,1,AGT-10,2026-06-19T12:29:39,1,0,
+44,24,correct_but_edited,high,1,both,Suggested wrong escalation path for billing disputes.,human_auditor,2026-06-02T12:29:39,,0,,,0,1,prompt-v1.4
+45,3,wrong_policy,high,1,prompt_update,Response used deprecated pricing tier names.,signal_extractor_v1,2026-06-20T12:29:39,,0,,,0,1,prompt-v2.6
+46,26,correct_but_edited,low,1,index_update,Tone was too formal for a chat channel interaction.,human_auditor,2026-06-10T12:29:39,,0,,,0,0,
+47,7,missing_context,medium,1,index_update,Model cited an outdated return policy version.,signal_extractor_v1,2026-05-31T12:29:39,2,1,AGT-09,2026-06-14T12:29:39,0,0,
+48,59,retrieval_miss,high,1,index_update,Response was correct but agent added empathy phrasing.,signal_extractor_v1,2026-06-20T12:29:39,,0,,,0,0,
+49,60,missing_context,medium,1,none,Tone was too formal for a chat channel interaction.,signal_extractor_v1,2026-06-11T12:29:39,,0,,,1,1,
+50,9,other,critical,1,none,Response was correct but agent added empathy phrasing.,signal_extractor_v1,2026-05-31T12:29:39,,0,,,1,0,
+51,53,hallucination,high,1,index_update,Model cited an outdated return policy version.,human_auditor,2026-06-19T12:29:39,0,1,AGT-03,2026-06-11T12:29:39,0,1,
+52,44,missing_context,critical,1,none,Missing context about customer's previous escalation history.,human_auditor,2026-06-21T12:29:39,,0,,,0,1,
+53,28,retrieval_miss,critical,1,prompt_update,Missing context about customer's previous escalation history.,human_auditor,2026-06-19T12:29:39,2,1,AGT-06,2026-06-23T12:29:39,0,1,prompt-v3.9
+54,75,other,critical,1,index_update,Tone was too formal for a chat channel interaction.,signal_extractor_v1,2026-06-06T12:29:39,,0,,,1,0,
+55,29,wrong_tone,high,1,both,Response hallucinated a 48-hour resolution SLA that does not exist.,human_auditor,2026-06-10T12:29:39,2,0,AGT-12,2026-06-12T12:29:39,1,1,prompt-v1.6
+56,36,correct_but_edited,low,0,none,Missing context about customer's previous escalation history.,human_auditor,2026-05-28T12:29:39,2,1,AGT-07,2026-06-23T12:29:39,0,1,
+57,2,correct_but_edited,high,1,both,Model reached token limit and truncated the policy explanation.,human_auditor,2026-06-12T12:29:39,,0,,,0,0,prompt-v3.8
+58,80,other,critical,1,index_update,Missing context about customer's previous escalation history.,human_auditor,2026-06-02T12:29:39,1,0,AGT-12,2026-06-16T12:29:39,1,1,
+59,19,hallucination,low,0,none,Response hallucinated a 48-hour resolution SLA that does not exist.,signal_extractor_v1,2026-06-12T12:29:39,2,1,AGT-07,2026-06-12T12:29:39,0,1,
+60,17,wrong_policy,critical,1,none,Model reached token limit and truncated the policy explanation.,human_auditor,2026-06-02T12:29:39,,0,,,0,0,

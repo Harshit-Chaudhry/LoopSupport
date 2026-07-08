@@ -1,0 +1,63 @@
+# Core API
+
+fastapi>=0.115,<1.0
+uvicorn[standard]>=0.35
+
+# Data validation & config
+
+pydantic>=2.11
+python-dotenv>=1.1
+python-multipart>=0.0.20
+
+# Database
+
+sqlalchemy>=2.0
+alembic>=1.16
+
+# Data science
+
+numpy>=2.0
+pandas>=2.2
+scikit-learn>=1.7
+
+# Visualization
+
+matplotlib>=3.10
+plotly>=6.0
+
+# LLMs & Embeddings
+
+transformers>=4.53
+sentence-transformers>=5.0
+accelerate>=1.8
+bitsandbytes>=0.46
+
+# RAG / Vector Store
+
+chromadb>=1.0
+
+# Agent Framework
+
+langchain>=0.3
+langchain-community>=0.3
+langchain-core>=0.3
+langgraph>=0.5
+
+# Utilities
+
+requests>=2.32
+tqdm>=4.67
+jinja2>=3.1
+typing-extensions>=4.14
+
+# Optional document loaders
+
+pypdf>=5.0
+unstructured>=0.18
+beautifulsoup4>=4.13
+lxml>=5.4
+ipykernel
+
+# Anonymization
+presidio_analyzer
+presidio_anonymizer
