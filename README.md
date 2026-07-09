@@ -140,7 +140,7 @@ Raw Ticket (customer text)
 ## 4. Project Structure
 
 ```
-support-ai/
+LoopSupport/
 ├── README.md
 ├── requirements.txt
 ├── .gitignore                     ← includes data/raw/, data/clean/, backups/
@@ -203,7 +203,7 @@ support-ai/
     ├── test_rag_prompt.py
     ├── test_feedback_pipeline.py
     └── e2e/
-        └── test_agent_ui.py       ← playwright end-to-end
+        └── test_agent_ui.py       ← playwright end-to-end 
 ```
 
 ---
