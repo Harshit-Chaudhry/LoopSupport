@@ -34,6 +34,7 @@ bitsandbytes>=0.46
 
 # RAG / Vector Store
 
+faiss-cpu>=1.11
 chromadb>=1.0
 
 # Agent Framework
@@ -59,5 +60,6 @@ lxml>=5.4
 ipykernel
 
 # Anonymization
+
 presidio_analyzer
 presidio_anonymizer
