@@ -79,7 +79,7 @@ class Interaction(Base):
     retrieval_top1_score = Column(Float, nullable=True)
     retrieval_top3_avg_score = Column(Float, nullable=True)
     low_confidence_flag = Column(Boolean, nullable=False, default=False)
-    agent_action = Column(String, nullable=False)
+    agent_action = Column(String, nullable=True)  # unknown until /feedback — pending suggestion
     agent_final = Column(Text, nullable=True)
     edit_distance = Column(Integer, nullable=True)
     edit_distance_ratio = Column(Float, nullable=True)
